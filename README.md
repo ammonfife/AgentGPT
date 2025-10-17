@@ -25,6 +25,10 @@ AgentGPT allows you to configure and deploy Autonomous AI agents.
 Name your own custom AI and have it embark on any goal imaginable.
 It will attempt to reach the goal by thinking of tasks to do, executing them, and learning from the results 🚀.
 
+> For cross-repo guidance and the latest workspace expectations, see the canonical copies in `Documents/GitHub/GitHubGitHub/AGENTS.md` and `README.md`. Keep this README aligned with those playbooks when processes change.
+
+Need to capture a Chrome audit trail while working in AgentGPT? Use the shared helper `tools/chrome/dump_all_tabs.py` (run from the workspace root) to dump HTML snapshots of every open tab into `~/Desktop/chrome_tab_sources/` before handing off investigations.
+
 ---
 
 ## ✨ Demo

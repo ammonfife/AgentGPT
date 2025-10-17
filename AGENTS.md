@@ -2,11 +2,14 @@
 
 AgentGPT pairs a Next.js front-end with a FastAPI platform and setup CLI. Follow the practices below to keep contributions consistent.
 
+> Canonical source: sync these guidelines with `Documents/GitHub/GitHubGitHub/AGENTS.md` and its companion `README.md`. When they diverge, treat the GitHubGitHub copies as the source of truth and update this file accordingly.
+
 ## Project Structure & Module Organization
 - `next/` hosts the web app (`src/`, `prisma/`, `public/`). Front-end tests live in `next/__tests__/`.
 - `platform/` contains the FastAPI service at `reworkd_platform/`, including async services and pytest suites under `reworkd_platform/tests/`.
 - `cli/` bundles the onboarding CLI, while `db/` provides the MySQL schema used by Docker compose.
 - Shared resources and docs live in `docs/` and `scripts/`. Environment samples reside at `next/.env.example`.
+- Browser helpers: mirror workspace utilities like `tools/chrome/dump_all_tabs.py` when you need to snapshot Chrome sessions alongside AgentGPT investigations.
 
 ## Build, Test, and Development Commands
 - `docker-compose up --build` spins up MySQL, the FastAPI platform, and the Next.js UI.
